@@ -1,0 +1,30 @@
+{
+    "name": "oxidmod/test-task",
+    "description": "Test task",
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "oxidmod",
+            "email": "oxidmod@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "slim/slim": "^3.0",
+        "oxidmod/my-rtb": "^1.0",
+        "slim/twig-view": "^2.1",
+        "guzzlehttp/guzzle": "^6.2",
+        "phpunit/phpunit": "^5.7"
+    },
+    "autoload": {
+        "psr-4": {
+            "TestTask\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "TestTask\\": "tests/"
+        }
+    }
+}

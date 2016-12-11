@@ -1,0 +1,12 @@
+{% extends "layout.html.twig" %}
+
+{% block content %}
+    <ul>
+        {% for advertisement in advertisements %}
+            <li>
+                <img src="{{ advertisement.image }}" alt="" />
+            </li>
+        {% endfor %}
+    </ul>
+    <a href="{{ path_for('home') }}">back</a>
+{% endblock %}

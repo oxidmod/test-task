@@ -1,0 +1,11 @@
+{% extends "layout.html.twig" %}
+
+{% block content %}
+<ul>
+    {% for link in links %}
+        <li>
+            <a href="{{ path_for(link.url) }}">{{ link.title }}</a>
+        </li>
+    {% endfor %}
+</ul>
+{% endblock %}
