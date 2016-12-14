@@ -7,7 +7,6 @@ use TestTask\Services\Advertise\Factory\AdvertisementFactory;
 
 /**
  * Class AdvertisementRemoteJsonRepository
- * @package TestTask\Repository\Advertisement
  */
 class AdvertisementRemoteJsonRepository extends AdvertisementRepository
 {
@@ -47,7 +46,7 @@ class AdvertisementRemoteJsonRepository extends AdvertisementRepository
                     $advData['image'] ?? 'http://lorempixel.com/400/200/'
                 );
             },
-            $this->parseJson($response->getBody())
+            $this->parseJson((string) $response->getBody())
         );
     }
 

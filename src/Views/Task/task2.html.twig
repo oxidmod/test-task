@@ -1,0 +1,12 @@
+{% extends "layout.html.twig" %}
+
+{% block content %}
+    <ul>
+        {% for year, count in years %}
+            <li>
+                There were {{ count }} alive presidents in {{ year }}.
+            </li>
+        {% endfor %}
+    </ul>
+    <a href="{{ path_for('home') }}">back</a>
+{% endblock %}
