@@ -11,6 +11,7 @@
     ],
     "minimum-stability": "dev",
     "require": {
+        "php": "^7.*",
         "slim/slim": "^3.0",
         "oxidmod/my-rtb": "^1.0",
         "slim/twig-view": "^2.1",
