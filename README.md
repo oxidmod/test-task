@@ -7,3 +7,6 @@
 
 *Tests*:
 * run vendor/bin/phpunit in root directory 
+
+*Run local*:
+* run php -S localhost -t web/ in root directory
