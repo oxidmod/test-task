@@ -6,7 +6,8 @@
 * composer install
 
 *Tests*:
-* run vendor/bin/phpunit in root directory 
+* Run vendor/bin/phpunit in root directory 
 
 *Run local*:
-* run php -S localhost -t web/ in root directory
+* Run php -S localhost -t web/ in root directory
+* Open http://localhost in your browser
